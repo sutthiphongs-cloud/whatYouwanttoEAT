@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>รายการอาหารทั้งหมด</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍱 เมนูอาหารทั้งหมด</h1>
+    <div id="menu-list" class="menu-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const menuContainer = document.getElementById("menu-list");
+    for (const [id, food] of Object.entries(foods)) {
+      const item = document.createElement("div");
+      item.classList.add("menu-item");
+      item.innerHTML = `
+        <h3><a href="food.html?id=${id}">${food.name}</a></h3>
+        <p>${food.base} kcal</p>
+      `;
+      menuContainer.appendChild(item);
+    }
+  </script>
+</body>
+</html>

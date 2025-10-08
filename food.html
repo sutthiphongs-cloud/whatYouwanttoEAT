@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เมนูอาหาร</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="food-container"></div>
+  <button class="back-btn" onclick="goBack()">⬅ กลับไปหน้าเมนูทั้งหมด</button>
+
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const foodId = params.get("id");
+    loadFood(foodId);
+  </script>
+</body>
+</html>
