@@ -144,6 +144,11 @@ const foods = {
     name: "ข้าวมันไก่",
     base: 0,
     addons: { "ไก่ทอด": 696, "ไก่ต้ม": 585 }
+  },
+  kaoMooDaeng: {
+    name: "ข้าวหมูแดง",
+    base: 509,
+    addons: {}
   }
 };
 
