@@ -144,7 +144,11 @@ const foods = {
     name: "ข้าวมันไก่",
     base: 0,
     addons: { "ไก่ทอด": 696, "ไก่ต้ม": 585 }
-  }
+  },
+  kaomoodeang: {
+    name: "ข้าวหมูแดง",
+    base: 509,
+    addons: {}
 };
 
 // 🧮 โหลดข้อมูลเมนูอาหาร
@@ -184,3 +188,4 @@ function calculateCalories(foodId) {
 function goBack() {
   window.location.href = "index.html";
 }
+
