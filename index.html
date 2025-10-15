@@ -2,35 +2,27 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Calorie Calculator</title>
+  <title>รายการอาหารทั้งหมด</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🍊 คำนวณแคลอรี่เมนูอาหาร</h1>
-
-    <label for="menu">เลือกเมนู:</label>
-    <select id="menu">
-      <option value="ข้าวกะเพรา">ข้าวกะเพรา</option>
-      <option value="ข้าวผัด">ข้าวผัด</option>
-      <option value="ข้าวมันไก่">ข้าวมันไก่</option>
-      <option value="ก๋วยเตี๋ยวหมูน้ำตก">ก๋วยเตี๋ยวหมูน้ำตก</option>
-    </select>
-
-    <h3>เพิ่มท็อปปิ้ง:</h3>
-    <div class="addons">
-      <label><input type="checkbox" value="ไข่ดาว"> ไข่ดาว (+180 kcal)</label>
-      <label><input type="checkbox" value="ชีส"> ชีส (+120 kcal)</label>
-      <label><input type="checkbox" value="หมูกรอบ"> หมูกรอบ (+250 kcal)</label>
-      <label><input type="checkbox" value="ไข่เจียว"> ไข่เจียว (+200 kcal)</label>
-    </div>
-
-    <button id="calcBtn">คำนวณแคลอรี่</button>
-
-    <div id="result"></div>
+    <h1>🍱 เมนูอาหารทั้งหมด</h1>
+    <div id="menu-list" class="menu-list"></div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    const menuContainer = document.getElementById("menu-list");
+    for (const [id, food] of Object.entries(foods)) {
+      const item = document.createElement("div");
+      item.classList.add("menu-item");
+      item.innerHTML = `
+        <h3><a href="food.html?id=${id}">${food.name}</a></h3>
+        <p>${food.base} kcal</p>
+      `;
+      menuContainer.appendChild(item);
+    }
+  </script>
 </body>
 </html>
