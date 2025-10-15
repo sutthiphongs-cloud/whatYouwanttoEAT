@@ -149,6 +149,7 @@ const foods = {
     name: "ข้าวหมูแดง",
     base: 509,
     addons: {}
+  }
 };
 
 // 🧮 โหลดข้อมูลเมนูอาหาร
@@ -188,4 +189,3 @@ function calculateCalories(foodId) {
 function goBack() {
   window.location.href = "index.html";
 }
-
