@@ -1,6 +1,6 @@
 body {
-  font-family: 'Noto Sans Thai', sans-serif;
-  background-color: #fff7ee;
+  font-family: 'Prompt', sans-serif;
+  background-color: #fff8f0;
   color: #333;
   display: flex;
   justify-content: center;
@@ -10,52 +10,41 @@ body {
 }
 
 .container {
-  text-align: center;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 4px 12px rgba(255, 130, 0, 0.2);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 149, 0, 0.2);
   width: 320px;
+  text-align: center;
 }
 
 h1 {
-  color: #ff7a00;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-#food-box {
-  background-color: #fff3e6;
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-
-#food-name {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #444;
+  color: #ff8c00;
 }
 
 button {
-  background-color: #ff7a00;
+  background-color: #ff8c00;
   color: white;
   border: none;
-  padding: 12px 28px;
-  border-radius: 25px;
+  border-radius: 12px;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: 0.2s;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 button:hover {
-  background-color: #ff9a3d;
-  transform: scale(1.05);
+  background-color: #ff9f2f;
 }
 
-#calorie-info {
-  color: #777;
+.addons {
+  text-align: left;
   margin-top: 10px;
-  font-size: 0.9rem;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6f00;
+  font-size: 18px;
 }
